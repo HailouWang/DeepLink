@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DeepLink</string>
+    <string name="app_name_one">DeepLink One</string>
+    <string name="app_name_two">DeepLink Two</string>
 </resources>

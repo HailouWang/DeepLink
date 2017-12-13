@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (url.startsWith("will://")) {
                     Uri uri = Uri.parse(url);
-                    Log.e("---------scheme: ", uri.getScheme() + "host: " + uri.getHost() + "Id: " + uri.getPathSegments().get(0));
+                    Log.e("hlwang","---------scheme: "+ uri.getScheme() + "host: " + uri.getHost() + "Id: " + uri.getPathSegments().get(0));
                     Toast.makeText(MainActivity.this, "打开新的页面", Toast.LENGTH_LONG).show();
                     return true; //返回true，代表要拦截这个url
                 }

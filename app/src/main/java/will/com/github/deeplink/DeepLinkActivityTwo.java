@@ -1,14 +1,13 @@
 package will.com.github.deeplink;
 
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
-public class DeepLinkActivity extends AppCompatActivity {
+public class DeepLinkActivityTwo extends AppCompatActivity {
 
     TextView tv_data;
 
@@ -36,7 +35,7 @@ public class DeepLinkActivity extends AppCompatActivity {
             host = data.getHost(); // "share"
             params = data.getPathSegments();
             String testId = params.get(0); // "uuid"
-            tv_data.setText("DeepLinkActivity Scheme: " + scheme + "\n" + "host: " + host + "\n" + "params: " + testId);
+            tv_data.setText("DeepLinkActivityTwo Scheme: " + scheme + "\n" + "host: " + host + "\n" + "params: " + testId);
         } catch (Exception e) {
             e.printStackTrace();
         }
